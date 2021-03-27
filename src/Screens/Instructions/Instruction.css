@@ -1,0 +1,183 @@
+.instructionGrid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 90vh;
+  font-size: calc(6px + 1vw);
+}
+
+.instructionNavbar {
+  display: flex;
+  width: 100%;
+  background-color: #f3f4ed;
+}
+
+.instructionSection {
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.instructionNavbar h2 {
+  font-size: calc(0.6rem + 1vw);
+  margin: 0 2rem;
+  color: #424642;
+}
+
+.instructionHeadeer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instructionBody {
+  margin: 1rem 1rem;
+  font-weight: 200;
+}
+
+.instructionBody h3 {
+  font-weight: 400;
+}
+
+.firstList {
+  list-style-type: none;
+}
+.firstList i {
+  color: #e84545;
+}
+
+.firstList li {
+  margin: 1rem 1rem;
+}
+.firstList span {
+  margin: 0 10px;
+  padding: 2px 12px;
+}
+
+.notVisited {
+  padding: 2px 13px !important;
+  border: 1px solid rgb(211, 211, 211);
+  background-color: #f8f5f1;
+  border-radius: 5px;
+}
+
+.notAnswered {
+  background-color: #e84545;
+  border-radius: 0 0 10px 10px;
+}
+.answered {
+  border-radius: 10px 10px 0 0;
+  background-color: #9ede73;
+}
+
+.notAnsweredMark {
+  border-radius: 50%;
+  background-color: #fed049;
+}
+
+.answeredMark {
+  position: relative;
+  border-radius: 50%;
+  background-color: #fed049;
+}
+
+.answeredMark::after {
+  content: "✔";
+  font-size: 10px;
+  position: absolute;
+  top: -0.2rem;
+  left: 1.5rem;
+}
+
+.Card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.Card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.instructionFooter {
+  width: 100%;
+  height: calc(100vh - 90vh);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nextBtn {
+  margin: 10px 20px;
+  padding: 0px 10px !important;
+  width: 100px;
+  height: 35px;
+  background-color: #ffc93c;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.moreInstructionBtnGrp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prevBtn {
+  margin: 10px 20px;
+  padding: 0px 20px !important;
+  width: max-content;
+  height: 35px;
+  background-color: #f3f4ed;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.beginTestBtn {
+  margin: 10px 20px;
+  padding: 0px 20px !important;
+  width: max-content;
+  height: 35px;
+  background-color: #7eca9c;
+  border: none;
+  font-weight: 800;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.beginTestBtn-active {
+  margin: 10px 20px;
+  padding: 0px 20px !important;
+  width: max-content;
+  height: 35px;
+  background-color: #7eca9c;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.moreInstructionMsg {
+  margin-top: calc(90px + 1vw);
+}
+
+.moreInstructionCheckbox {
+  display: flex;
+  margin: 1rem 1rem;
+}
+
+.moreInstructionCheckbox input {
+  margin: 0.3rem 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .instructionGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 90vh;
+  }
+}
